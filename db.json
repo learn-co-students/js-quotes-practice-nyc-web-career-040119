@@ -2,15 +2,39 @@
   "quotes": [
     {
       "id": 7,
-      "quote": "Tell me and I forget, teach me and I remember, involve me and I learn.",
-      "likes": "8",
-      "author": "Benjamin Franklin"
+      "quote": "kjlfkfds",
+      "likes": 1,
+      "author": "fdfdsjklfdfsff;klf"
     },
     {
       "id": 8,
       "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
-      "likes": "13",
-      "author": "Winston Churchhill"
+      "likes": 1,
+      "author": "Winston Churchmountain"
+    },
+    {
+      "quote": "yes",
+      "author": "no",
+      "likes": "25",
+      "id": 9
+    },
+    {
+      "quote": "yes",
+      "author": "yes",
+      "likes": 1,
+      "id": 10
+    },
+    {
+      "quote": "asdfsadfdsfdfadffdfdsfdssdfsffdfd",
+      "author": "123",
+      "likes": 1,
+      "id": 11
+    },
+    {
+      "quote": "hello",
+      "author": "i am",
+      "likes": "11",
+      "id": 12
     }
   ]
 }
