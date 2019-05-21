@@ -33,8 +33,33 @@ document.addEventListener('DOMContentLoaded', (event) => {
       let deleteId = parseInt(onClick.id)
         onClick.parentElement.parentElement.remove()
         fetch(`http://localhost:3000/quotes/${deleteId}`, {method:"DELETE"})
-      }
-    })//Delete a quote, works for db
+      }//Delete
+
+
+      //beginning of Like
+      let spanTag = onClick.children[0]
+      let quoteId = parseInt(onClick.children[0].id)
+      let numLikes = parseInt(onClick.children[0].innerText)
+
+        spanTag.innerText = `${numLikes + 1}`
+      fetch(`http://localhost:3000/quotes/${quoteId}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          "likes": ++numLikes
+        })
+      })
+      .then(resp => resp.json())
+      .then((obj) => {
+        obj.likes+=1
+        return obj.likes;
+      })//END of Like
+    })//Delete & Like buttons
+
+
     newQuoteFormBox.addEventListener("submit", function(event){
       event.preventDefault()
 
@@ -44,7 +69,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         method:"POST",
         headers: {
           "Content-Type": "application/json",
-          Accepts: "application/json",
+          Accept: "application/json",
         },
         body: JSON.stringify({
           "quote": newQuote.value,
@@ -68,7 +93,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
       })
       newQuoteFormBox.reset()
-    })
+    })//AddNewQuote END, adds to DB
 
 
 
