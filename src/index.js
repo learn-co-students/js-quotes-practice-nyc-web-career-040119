@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             <blockquote class="blockquote">
               <p class="mb-0">${quote.quote}</p>
               <footer class="blockquote-footer">${quote.author}</footer>
+              <button class="btn-edit" id="edit-${quote.id}">edit</button>
               <br>
               <button class='btn-success'>Likes: <span id="${quote.id}">${quote.likes}</span></button>
               <button class='btn-danger' id="${quote.id}">Delete</button>
@@ -85,6 +86,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             <blockquote class="blockquote">
               <p class="mb-0">${newQuoteItem.quote}</p>
               <footer class="blockquote-footer">${newQuoteItem.author}</footer>
+              <button class="btn-edit" id="edit-${newQuoteItem.id}">edit</button>
               <br>
               <button class='btn-success'>Likes: <span id="${newQuoteItem.id}">${newQuoteItem.likes}</span></button>
               <button class='btn-danger' id="${newQuoteItem.id}">Delete</button>
