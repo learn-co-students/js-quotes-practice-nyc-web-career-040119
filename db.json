@@ -1,15 +1,9 @@
 {
   "quotes": [
     {
-      "id": 1,
-      "quote": "The here and now is all we have, and if we play it right it's all we'll need.",
-      "likes": 11,
-      "author": "Ann Richards"
-    },
-    {
       "id": 2,
       "quote": "There are no secrets to success. It is the result of preparation, hard work, and learning from failure.",
-      "likes": 3,
+      "likes": 5,
       "author": "Collin Powell"
     },
     {
@@ -71,6 +65,12 @@
       "author": "asdfasdf",
       "likes": 0,
       "id": 25
+    },
+    {
+      "quote": "adsfasdf",
+      "author": "asdfasdf",
+      "likes": 0,
+      "id": 26
     }
   ]
 }
